@@ -46,7 +46,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CheckPointController.cs" />
      <Compile Include="Assets\camScript.cs" />
+     <Compile Include="Assets\gameManager.cs" />
      <Compile Include="Assets\localScriptid.cs" />
      <Compile Include="Assets\tempscript.cs" />
  <Reference Include="UnityEngine.UI">
