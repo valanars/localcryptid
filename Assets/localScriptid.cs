@@ -45,7 +45,7 @@ public class localScriptid : MonoBehaviour {
 			UpdateScore ();
 		}
 		//player dies upon collision w/ game obj tagged adult (scene resets)
-		if (other.gameObject.tag == "Adult") {
+		if (other.gameObject.tag == "Adult" && !hidden) {
 			transform.position = pos;
 			//SceneManager.LoadScene ("Test Scene");
 		}
@@ -58,7 +58,14 @@ public class localScriptid : MonoBehaviour {
 	//player can hide when touching game obj tagged hide & holding spacebar
 		if (Input.GetKey (KeyCode.Space) && cover.gameObject.tag == "Hide") {
 			hidden = true;
-			print ("hidden");
+		}
+
+		if (Input.GetKeyUp (KeyCode.Space) && hidden == true) {
+			hidden = false;
+		}
+
+		if (Input.GetKeyUp (KeyCode.W) && disguised == true) {
+			disguised = false;
 		}
 	}
 
