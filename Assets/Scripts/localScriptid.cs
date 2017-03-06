@@ -44,13 +44,13 @@ public class localScriptid : MonoBehaviour {
 			score = score + 1;
 			UpdateScore ();
 		}
-		//player dies upon collision w/ game obj tagged adult (scene resets)
+		//player dies upon collision w/ game obj tagged adult (goes to death screen)
 		if (other.gameObject.tag == "Adult" && !hidden) {
-			transform.position = pos;
-			//SceneManager.LoadScene ("Test Scene");
+			SceneManager.LoadScene ("Death Screen");
 		}
-		if (other.gameObject.tag == "Checkpoint") {
-			pos = other.transform.position;
+		//player reaches end, loads win screen
+		if (other.gameObject.tag == "Finish") {
+			SceneManager.LoadScene ("Win Screen");
 		}
 	}
 
