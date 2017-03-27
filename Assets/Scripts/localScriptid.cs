@@ -72,6 +72,6 @@ public class localScriptid : MonoBehaviour {
 
 	void UpdateScore () {
 		//add text and count it u goober
-		scoreText.text = "Score: " + score;
+		scoreText.text = "Children Eaten: " + score;
 	}
 }
