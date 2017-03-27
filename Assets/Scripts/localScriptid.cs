@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class localScriptid : MonoBehaviour {
 
 	public Text scoreText;
-	private int score;
+	private int kidsEaten;
 
 	bool hidden = false;
 	bool disguised = false;  
@@ -15,8 +15,8 @@ public class localScriptid : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		score = 0;
-		UpdateScore ();
+		kidsEaten = 0;
+		UpdateEaten ();
 	}
 	
 	void Update () {
@@ -41,8 +41,8 @@ public class localScriptid : MonoBehaviour {
 		//when disguised, player destroys child object upon contact and adds points to counter
 		if (disguised == true && other.gameObject.tag == "Child") {
 			Destroy (other.gameObject);
-			score = score + 1;
-			UpdateScore ();
+			kidsEaten = kidsEaten + 1;
+			UpdateEaten ();
 			print ("child collision");
 		}
 		//player dies upon collision w/ game obj tagged adult (goes to death screen)
@@ -70,8 +70,8 @@ public class localScriptid : MonoBehaviour {
 		}
 	}
 
-	void UpdateScore () {
+	void UpdateEaten () {
 		//add text and count it u goober
-		scoreText.text = "Children Eaten: " + score;
+		scoreText.text = "Kids Eaten: " + kidsEaten;
 	}
 }
