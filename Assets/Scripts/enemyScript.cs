@@ -9,6 +9,10 @@ public class enemyScript : MonoBehaviour {
 
 	public float moveSpeed;
 
+	//[nameAnim.SetBool ("ParameterName", boolean that it relates to)]
+	//TURN OFF HAS EXIT TIME
+	//Add conditions
+
 	// Use this for initialization
 	void Start () {
 		

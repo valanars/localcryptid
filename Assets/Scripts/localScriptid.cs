@@ -43,6 +43,7 @@ public class localScriptid : MonoBehaviour {
 			Destroy (other.gameObject);
 			score = score + 1;
 			UpdateScore ();
+			print ("child collision");
 		}
 		//player dies upon collision w/ game obj tagged adult (goes to death screen)
 		if (other.gameObject.tag == "Adult" && !hidden) {
