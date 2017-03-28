@@ -8,8 +8,16 @@ public class localScriptid : MonoBehaviour {
 	public Text scoreText;
 	private int kidsEaten;
 
+	Animator anim;
+
 	bool hidden = false;
-	bool disguised = false;  
+	bool disguised = false; 
+
+	public bool runLeft;
+	public bool runRight;
+
+	public bool hideStay;
+	public bool disStay;
 
 	public Vector3 pos;
 
@@ -17,17 +25,38 @@ public class localScriptid : MonoBehaviour {
 	void Start () {
 		kidsEaten = 0;
 		UpdateEaten ();
+		anim = GetComponent<Animator> ();
+		anim.SetBool ("runRight", false);
+		anim.SetBool ("runLeft", false);
+		anim.SetBool ("disStay", false);
+		anim.SetBool ("hideStay", false);
 	}
 	
 	void Update () {
-		if (Input.GetKey (KeyCode.A))
+		if (Input.GetKey (KeyCode.A) && hidden==false){
 			Move (-0.1f, 0);
-		if (Input.GetKey (KeyCode.D))
+			anim.SetBool ("runLeft", true);
+			anim.SetBool ("runRight", false);
+		}
+		if (Input.GetKey (KeyCode.D) && hidden==false) {
 			Move (0.1f, 0);
-		if (Input.GetKey (KeyCode.W)) {
+			anim.SetBool ("runLeft", false);
+			anim.SetBool ("runRight", true);
+		}
+		if (Input.GetKey (KeyCode.W) && hidden==false) {
 			disguised = true;
+			anim.SetBool ("disStay", true);
+			anim.SetBool ("hideStay", false);
 			print ("disguised");
 		}
+		if (Input.GetKeyUp (KeyCode.W) && hidden==false) {
+			anim.SetBool ("disStay", false);
+		}
+		if (Input.GetKeyUp (KeyCode.Space) && hidden==false) {
+			anim.SetBool ("hideStay", false);
+		}
+
+
 	}
 
 	void Move (float x, float y) {
@@ -59,14 +88,18 @@ public class localScriptid : MonoBehaviour {
 	//player can hide when touching game obj tagged hide & holding spacebar
 		if (Input.GetKey (KeyCode.Space) && cover.gameObject.tag == "Hide") {
 			hidden = true;
+			anim.SetBool ("hideStay", true);
+			anim.SetBool ("disStay", false);
 		}
 
 		if (Input.GetKeyUp (KeyCode.Space) && hidden == true) {
 			hidden = false;
+			anim.SetBool ("hideStay", false);
 		}
 
 		if (Input.GetKeyUp (KeyCode.W) && disguised == true) {
 			disguised = false;
+			anim.SetBool ("disStay", false);
 		}
 	}
 

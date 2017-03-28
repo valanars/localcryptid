@@ -1,0 +1,692 @@
+fileFormatVersion: 2
+guid: 725dcc4ba8411410793468b9d9536e2d
+timeCreated: 1490675993
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cryptid sprites_0
+    21300002: cryptid sprites_1
+    21300004: cryptid sprites_2
+    21300006: cryptid sprites_3
+    21300008: cryptid sprites_4
+    21300010: cryptid sprites_5
+    21300012: cryptid sprites_6
+    21300014: cryptid sprites_7
+    21300016: cryptid sprites_8
+    21300018: cryptid sprites_9
+    21300020: cryptid sprites_10
+    21300022: cryptid sprites_11
+    21300024: cryptid sprites_12
+    21300026: cryptid sprites_13
+    21300028: cryptid sprites_14
+    21300030: cryptid sprites_15
+    21300032: cryptid sprites_16
+    21300034: cryptid sprites_17
+    21300036: cryptid sprites_18
+    21300038: cryptid sprites_19
+    21300040: cryptid sprites_20
+    21300042: cryptid sprites_21
+    21300044: cryptid sprites_22
+    21300046: cryptid sprites_23
+    21300048: cryptid sprites_24
+    21300050: cryptid sprites_25
+    21300052: cryptid sprites_26
+    21300054: cryptid sprites_27
+    21300056: cryptid sprites_28
+    21300058: cryptid sprites_29
+    21300060: cryptid sprites_30
+    21300062: cryptid sprites_31
+    21300064: cryptid sprites_32
+    21300066: cryptid sprites_33
+    21300068: cryptid sprites_34
+    21300070: cryptid sprites_35
+    21300072: cryptid sprites_36
+    21300074: cryptid sprites_37
+    21300076: cryptid sprites_38
+    21300078: cryptid sprites_39
+    21300080: cryptid sprites_40
+    21300082: cryptid sprites_41
+    21300084: cryptid sprites_42
+    21300086: cryptid sprites_43
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cryptid sprites_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2717
+        width: 196
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_1
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 2720
+        width: 150
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_2
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 2719
+        width: 118
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_3
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 2724
+        width: 133
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_4
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 2818
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_5
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2412
+        width: 196
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_6
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2415
+        width: 151
+        height: 266
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_7
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 2413
+        width: 118
+        height: 268
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_8
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 2509
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_9
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 2415
+        width: 134
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_10
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 2112
+        width: 125
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_11
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 2112
+        width: 152
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_12
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 2110
+        width: 199
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_13
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2109
+        width: 153
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_14
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1814
+        width: 125
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_15
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1813
+        width: 153
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_16
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1810
+        width: 200
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_17
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 1810
+        width: 153
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_18
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1507
+        width: 141
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_19
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1504
+        width: 140
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_20
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1205
+        width: 141
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_21
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1203
+        width: 140
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_22
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 903
+        width: 138
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_23
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 903
+        width: 145
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_24
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 903
+        width: 149
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_25
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 903
+        width: 145
+        height: 275
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_26
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 903
+        width: 137
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_27
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 903
+        width: 138
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_28
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 603
+        width: 140
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_29
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 603
+        width: 137
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_30
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 603
+        width: 137
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_31
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 603
+        width: 137
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_32
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 603
+        width: 137
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_33
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 302
+        width: 137
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_34
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 302
+        width: 138
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_35
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 302
+        width: 145
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_36
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 302
+        width: 151
+        height: 277
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_37
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 302
+        width: 145
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_38
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 302
+        width: 137
+        height: 285
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_39
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 2
+        width: 137
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_40
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 2
+        width: 138
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_41
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 2
+        width: 138
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_42
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 2
+        width: 137
+        height: 284
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cryptid sprites_43
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 2
+        width: 139
+        height: 286
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
