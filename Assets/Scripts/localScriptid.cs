@@ -12,14 +12,14 @@ public class localScriptid : MonoBehaviour {
 
 	ParticleSystem party;
 
-	bool hidden = false;
-	bool disguised = false; 
+	bool hidden = false; //hide mechanic
+	bool disguised = false; //disguise mechanic
 
-	public bool runLeft;
-	public bool runRight;
+	public bool runLeft; //use to set anim state
+	public bool runRight; //use to set anim state
 
-	public bool hideStay;
-	public bool disStay;
+	public bool hideStay; //use to set anim state
+	public bool disStay; //use to set anim state
 
 	AudioSource sound;
 
@@ -27,10 +27,10 @@ public class localScriptid : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		kidsEaten = 0;
-		UpdateEaten ();
+		kidsEaten = 0; //scoring shit
+		UpdateEaten (); //more scores
 
-		anim = GetComponent<Animator> ();
+		anim = GetComponent<Animator> (); //start with all animation states set to false = idle is base state
 		anim.SetBool ("runRight", false);
 		anim.SetBool ("runLeft", false);
 		anim.SetBool ("disStay", false);
@@ -38,7 +38,10 @@ public class localScriptid : MonoBehaviour {
 
 		sound = GetComponent<AudioSource> ();
 	}
-	
+
+	//OK SO I FIGURED OUT THE ISSUE???? IF YOU STOP MOVING IT DOESNT SET ANYTHIG TO FALSE
+	//btw disguise and hidden set themselves to false so pls do not worr,,, my son it is okay
+	//im 12 ears old yoly fuck
 	void Update () {
 		if (Input.GetKey (KeyCode.A) && hidden==false){
 			Move (-0.1f, 0);
@@ -51,21 +54,22 @@ public class localScriptid : MonoBehaviour {
 			anim.SetBool ("runRight", true);
 		}
 		if (Input.GetKey (KeyCode.W) && hidden==false) {
-			disguised = true;
+			disguised = true; //if disguised is true, walkin' over a kid eats them. separate from disStay
 			anim.SetBool ("disStay", true);
 			anim.SetBool ("hideStay", false);
 			print ("disguised");
 		}
 		if (Input.GetKeyUp (KeyCode.W) && hidden==false) {
-			anim.SetBool ("disStay", false);
+			anim.SetBool ("disStay", false); //disengage the mcfucking disguise animation when no longer holdin down W
 		}
 		if (Input.GetKeyUp (KeyCode.Space) && hidden==false) {
-			anim.SetBool ("hideStay", false);
+			anim.SetBool ("hideStay", false); //disengage the mcfucking hide when no longer holding down spacebar
 		}
 
 
 	}
 
+	//it's the move code great googly moogly
 	void Move (float x, float y) {
 		Vector3 pos = transform.position;
 		pos.x += x;
@@ -96,22 +100,20 @@ public class localScriptid : MonoBehaviour {
 		if (Input.GetKey (KeyCode.Space) && cover.gameObject.tag == "Hide") {
 			hidden = true;
 			anim.SetBool ("hideStay", true);
-			anim.SetBool ("disStay", false);
+			anim.SetBool ("disStay", false); //cannot hide and disguise at the same time
 		}
 
 		if (Input.GetKeyUp (KeyCode.Space) && hidden == true) {
-			hidden = false;
-			anim.SetBool ("hideStay", false);
+			hidden = false; //disengages the hide STATE
 		}
 
 		if (Input.GetKeyUp (KeyCode.W) && disguised == true) {
-			disguised = false;
-			anim.SetBool ("disStay", false);
+			disguised = false; //disengages disguise STATE
 		}
 	}
 
 	void UpdateEaten () {
-		//add text and count it u goober
+		//add text and count score u goober
 		scoreText.text = "Kids Eaten: " + kidsEaten;
 	}
 }
