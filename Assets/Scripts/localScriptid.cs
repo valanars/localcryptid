@@ -10,6 +10,8 @@ public class localScriptid : MonoBehaviour {
 
 	Animator anim;
 
+	ParticleSystem party;
+
 	bool hidden = false;
 	bool disguised = false; 
 
@@ -19,17 +21,22 @@ public class localScriptid : MonoBehaviour {
 	public bool hideStay;
 	public bool disStay;
 
+	AudioSource sound;
+
 	public Vector3 pos;
 
 	// Use this for initialization
 	void Start () {
 		kidsEaten = 0;
 		UpdateEaten ();
+
 		anim = GetComponent<Animator> ();
 		anim.SetBool ("runRight", false);
 		anim.SetBool ("runLeft", false);
 		anim.SetBool ("disStay", false);
 		anim.SetBool ("hideStay", false);
+
+		sound = GetComponent<AudioSource> ();
 	}
 	
 	void Update () {
@@ -69,10 +76,10 @@ public class localScriptid : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		//when disguised, player destroys child object upon contact and adds points to counter
 		if (disguised == true && other.gameObject.tag == "Child") {
+			sound.Play ();
 			Destroy (other.gameObject);
 			kidsEaten = kidsEaten + 1;
 			UpdateEaten ();
-			print ("child collision");
 		}
 		//player dies upon collision w/ game obj tagged adult (goes to death screen)
 		if (other.gameObject.tag == "Adult" && !hidden) {

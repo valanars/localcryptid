@@ -8,7 +8,7 @@ public class WinScreenManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.Escape)) {
-			SceneManager.LoadScene ("Game Screen");
+			SceneManager.LoadScene ("Start Screen");
 		}
 	}
 }
