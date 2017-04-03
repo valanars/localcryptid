@@ -38,9 +38,8 @@ public class localScriptid : MonoBehaviour {
 
 		sound = GetComponent<AudioSource> ();
 	}
-
-	//OK SO I FIGURED OUT THE ISSUE???? IF YOU STOP MOVING IT DOESNT SET ANYTHIG TO FALSE
-	//btw disguise and hidden set themselves to false so pls do not worr,,, my son it is okay
+		
+	//disguise and hidden set themselves to false so pls do not worr,,, my son it is okay
 	//im 12 ears old yoly fuck
 	void Update () {
 		if (Input.GetKey (KeyCode.A) && hidden==false){
@@ -65,7 +64,12 @@ public class localScriptid : MonoBehaviour {
 		if (Input.GetKeyUp (KeyCode.Space) && hidden==false) {
 			anim.SetBool ("hideStay", false); //disengage the mcfucking hide when no longer holding down spacebar
 		}
-
+		if (Input.GetKeyUp (KeyCode.A)) {
+			anim.SetBool ("runLeft", false); //disengage the run left,,, u must c e a s e
+		}
+		if (Input.GetKeyUp (KeyCode.D)) {
+			anim.SetBool ("runRight", false); //hush my child it is okay........ for run right has been disabled
+		}
 
 	}
 
