@@ -7,6 +7,7 @@ public class localScriptid : MonoBehaviour {
 
 	public Text scoreText;
 	private int kidsEaten;
+    public ParticleSystem Cronchmeets; // this is just to define the particle system.
 
 	Animator anim;
 
@@ -84,6 +85,8 @@ public class localScriptid : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		//when disguised, player destroys child object upon contact and adds points to counter
 		if (disguised == true && other.gameObject.tag == "Child") {
+            Instantiate(Cronchmeets, new Vector3(other.gameObject.transform.position.x, other.gameObject.transform.position.y), Quaternion.identity);
+            // this code instantiates the particle effect (Cronchmeets is the name, and the particles spawn at the x and y coordinates of the child gameobject).
 			sound.Play ();
 			Destroy (other.gameObject);
 			kidsEaten = kidsEaten + 1;
@@ -94,9 +97,14 @@ public class localScriptid : MonoBehaviour {
 			SceneManager.LoadScene ("Death Screen");
 		}
 		//player reaches end, loads win screen
-		if (other.gameObject.tag == "Finish") {
+		if (other.gameObject.tag == "Finish" && kidsEaten < 11 && kidsEaten > 0)
 			SceneManager.LoadScene ("Win Screen");
-		}
+
+        if (other.gameObject.tag == "Finish" && kidsEaten == 0)
+            SceneManager.LoadScene("Win Screen2");
+
+        if (other.gameObject.tag == "Finish" && kidsEaten == 11)
+            SceneManager.LoadScene("Win Screen3");
 	}
 
 	void OnTriggerStay2D(Collider2D cover) {

@@ -10,7 +10,7 @@ public class camScript : MonoBehaviour {
 	//NOTE TO SELF: YOU CAN CHANGE OFFSET IF CAMERA IS AWKWARD
 	void Start ()
 	{
-
+		//offset = transform.position - player.transform.position;
 	}
 
 	//late called after Update each frame
