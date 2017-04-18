@@ -54,7 +54,7 @@
      <Compile Include="Assets\Scripts\enemyScript.cs" />
      <Compile Include="Assets\Scripts\gameManager.cs" />
      <Compile Include="Assets\Scripts\localScriptid.cs" />
-     <Compile Include="Assets\tutmanager.cs" />
+     <Compile Include="Assets\Scripts\tutmanager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
