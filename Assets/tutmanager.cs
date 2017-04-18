@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartScreenManager : MonoBehaviour {
+public class tutmanager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.Space)) {
-			SceneManager.LoadScene ("Tut");
+			SceneManager.LoadScene ("Game Screen");
 		}
 	}
 }
