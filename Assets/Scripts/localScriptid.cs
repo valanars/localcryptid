@@ -53,7 +53,7 @@ public class localScriptid : MonoBehaviour {
 			anim.SetBool ("runLeft", false);
 			anim.SetBool ("runRight", true);
 		}
-		if (Input.GetKey (KeyCode.W) && hidden==false) {
+		if (Input.GetKeyDown (KeyCode.W) && hidden==false) {
 			disguised = true; //if disguised is true, walkin' over a kid eats them. separate from disStay
 			anim.SetBool ("disStay", true);
 			anim.SetBool ("hideStay", false);
@@ -61,9 +61,11 @@ public class localScriptid : MonoBehaviour {
 		}
 		if (Input.GetKeyUp (KeyCode.W) && hidden==false) {
 			anim.SetBool ("disStay", false); //disengage the mcfucking disguise animation when no longer holdin down W
+			disguised = false;
 		}
 		if (Input.GetKeyUp (KeyCode.Space) && hidden==false) {
 			anim.SetBool ("hideStay", false); //disengage the mcfucking hide when no longer holding down spacebar
+			hidden = false;
 		}
 		if (Input.GetKeyUp (KeyCode.A)) {
 			anim.SetBool ("runLeft", false); //disengage the run left,,, u must c e a s e
@@ -121,6 +123,15 @@ public class localScriptid : MonoBehaviour {
 
 		if (Input.GetKeyUp (KeyCode.W) && disguised == true) {
 			disguised = false; //disengages disguise STATE
+		}
+
+		if (disguised == true && cover.gameObject.tag == "Child") {
+			Instantiate(Cronchmeets, new Vector3(cover.gameObject.transform.position.x, cover.gameObject.transform.position.y), Quaternion.identity);
+			// this code instantiates the particle effect (Cronchmeets is the name, and the particles spawn at the x and y coordinates of the child gameobject).
+			sound.Play ();
+			Destroy (cover.gameObject);
+			kidsEaten = kidsEaten + 1;
+			UpdateEaten ();
 		}
 	}
 
