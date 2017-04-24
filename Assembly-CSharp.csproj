@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\CheckPointController.cs" />
      <Compile Include="Assets\Scripts\DeathScreenManager.cs" />
      <Compile Include="Assets\Scripts\StartScreenManager.cs" />
+     <Compile Include="Assets\Scripts\TEST.cs" />
      <Compile Include="Assets\Scripts\WinScreenManager.cs" />
      <Compile Include="Assets\Scripts\camScript.cs" />
      <Compile Include="Assets\Scripts\enemyScript.cs" />

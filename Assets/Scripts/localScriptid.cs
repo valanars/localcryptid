@@ -26,6 +26,9 @@ public class localScriptid : MonoBehaviour {
 
 	public Vector3 pos;
 
+	public Camera cam;
+
+
 	// Use this for initialization
 	void Start () {
 		kidsEaten = 0; //scoring shit
@@ -38,6 +41,7 @@ public class localScriptid : MonoBehaviour {
 		anim.SetBool ("hideStay", false);
 
 		sound = GetComponent<AudioSource> ();
+		//cam.GetComponent<camScript> ();
 	}
 		
 	//disguise and hidden set themselves to false so pls do not worr,,, my son it is okay
@@ -93,6 +97,10 @@ public class localScriptid : MonoBehaviour {
 			Destroy (other.gameObject);
 			kidsEaten = kidsEaten + 1;
 			UpdateEaten ();
+
+			//reference script and engagE THE SHAKE
+			camScript cs = cam.GetComponent<camScript> ();
+			cs.Shake();
 		}
 		//player dies upon collision w/ game obj tagged adult (goes to death screen)
 		if (other.gameObject.tag == "Adult" && !hidden) {
@@ -128,6 +136,12 @@ public class localScriptid : MonoBehaviour {
 		if (disguised == true && cover.gameObject.tag == "Child") {
 			Instantiate(Cronchmeets, new Vector3(cover.gameObject.transform.position.x, cover.gameObject.transform.position.y), Quaternion.identity);
 			// this code instantiates the particle effect (Cronchmeets is the name, and the particles spawn at the x and y coordinates of the child gameobject).
+
+			//reference script and engagE THE SHAKE
+			camScript cs = cam.GetComponent<camScript> ();
+			cs.Shake();
+
+
 			sound.Play ();
 			Destroy (cover.gameObject);
 			kidsEaten = kidsEaten + 1;

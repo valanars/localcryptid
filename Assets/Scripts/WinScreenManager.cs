@@ -5,10 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class WinScreenManager : MonoBehaviour {
 
+	public float moveSpeed;
+
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.Escape)) {
 			SceneManager.LoadScene ("Start Screen");
 		}
+
+		//scroll text
+		transform.Translate(0, 0.01f, 0 * Time.deltaTime);
 	}
 }
