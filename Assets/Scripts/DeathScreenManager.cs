@@ -7,7 +7,7 @@ public class DeathScreenManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey (KeyCode.Backspace)) {
+		if (Input.GetKey (KeyCode.Escape)) {
 			SceneManager.LoadScene ("Start Screen");
 		}
 

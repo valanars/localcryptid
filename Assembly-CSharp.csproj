@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\camScript.cs" />
      <Compile Include="Assets\Scripts\enemyScript.cs" />
      <Compile Include="Assets\Scripts\gameManager.cs" />
+     <Compile Include="Assets\Scripts\honkIsGo.cs" />
      <Compile Include="Assets\Scripts\localScriptid.cs" />
      <Compile Include="Assets\Scripts\tutmanager.cs" />
  <Reference Include="UnityEngine.UI">
